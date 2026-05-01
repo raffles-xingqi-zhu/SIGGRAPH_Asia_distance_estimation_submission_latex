@@ -1,0 +1,25 @@
+\section{Introduction}
+\label{sec:intro}
+Precise interaction in head-mounted displays (HMDs) requires correct stereo geometry for users to accurately perceive size and distance in virtual environments. Precisely reproducing this geometry requires co-location of three features: for each eye, the Render Camera Center of Projection (CoP), the HMD Display CoP, and the User’s Eye CoP must be spatially aligned. In practice, this is rarely achieved and  many geometric models have been built by researchers to predict the perceptual consequences that may result from these errors \cite{held2008misperceptions, robinett92, woods93, krajancich2020}.
+
+The stereo-projection pipeline is susceptible to two classes of errors. First, rendering errors arise when the render camera used to generate the scene is displaced from the HMD CoP. Rendering errors are commonly introduced due to inaccuracies in tracking the user's head position \cite{holloway1997} and from motion-to-photon latency \cite{allison1999}. In more recently introduced mixed-reality HMDs with video passthrough, rendering errors can be introduced by the static displacement of the see-through video camera in front of user's eyes \cite{biocca98, Lee13, kuo23}.
+
+Second, viewing errors occur when the rendered image is geometrically correct for a nominal eye position, but the user’s actual eye (more specifically, the CoP of the eye) is displaced from this location \cite{vishwanath05, banks2014camera, held2008misperceptions, guan2023perceptual}. Current HMD optical designs assume a fixed, nominal eye position within the "eyebox" to maximize field of view and minimize distortion. HMDs without eyetracking assume the eye is always at this nominal location \cite{Rong25}. Yet, variance in human facial structure, improper headset fit, or mismatches between the headset’s inter-axial distance (IAD) and the user’s interpupillary distance (IPD) inevitably place the user’s Eye CoP away from the Display CoP. Even dynamic factors, such as the movement of the Eye CoP during eye rotations (i.e., ocular parallax), introduce transient viewing errors that most current rendering pipelines ignore \cite{holloway1997, rolland04, wann95}. These displacements fundamentally alter the triangulation geometry of the viewed image that should, according to projective geometry, disrupt the viewer's perception of size and distance.
+
+  
+While the theoretical distortions resulting from these rendering and viewing errors can be modeled using stereo geometry, the predictive accuracy of a simple triangulation model remains an open question. Can human perception be predicted simply from first-order geometry, or does the visual system employ higher-order perceptual mechanisms to normalize the percept? Assessing the predictive power of these geometric models is difficult, as manipulating parameters like headset fit, tracking accuracy, and latency are often difficult or infeasible to readily adjust in real headsets.
+
+In this work, we evaluate whether a simple geometric model can predict perceptual responses to errors in stereo geometry. To explore this, we make the following contributions:
+
+\begin{itemize}   
+    \item We build a software platform that allows direct manipulation of rendering and viewing errors in a real headset thereby enabling precise and repeatable adjustments of viewing errors without the need to physically manipulate headset fit. We used this platform to conduct a series of user studies and compared these results to the theoretical geometric model, and we additionally provide a web application that can be used to explore these geometric predictions interactively.
+
+    \item  We show that direct passthrough rendering errors and eye relief viewing errors induce changes in reach behavior that are well-predicted by stereo geometry, but we also identify a significant deviation in the case of IPD mismatch, which has a surprisingly small impact compared to model predictions.
+    
+    \item We conduct a psychophysical experiment exploring perceptual sensitivity to direct passthrough and IPD errors. We find that sensitivity varies with viewing distance and scene content, and confirm a surprising tolerance to IPD errors ($\approx$ 6 mm), even at near distances.
+    
+    
+\end{itemize}
+
+
+% Our results demonstrate a complex relationship between geometry and perception. We show that Rendering Errors (such as those in direct passthrough) and Eye Relief errors induce distance misperceptions that are tightly predicted by the triangulation model, supporting the hypothesis of geometric determinism. However, we also identify a significant deviation in the case of IPD mismatch, where users exhibit a surprisingly high perceptual tolerance, suggesting that the visual system is not a purely passive receiver of geometric data but possesses specific compensatory plasticity for biological variance. This work provides a rigorous geometric foundation for understanding distance perception in VR, moving the field beyond historical generalizations of underestimation toward a precise, computable model of stereoscopic error.

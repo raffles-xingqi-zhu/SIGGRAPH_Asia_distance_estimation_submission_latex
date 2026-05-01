@@ -1,0 +1,119 @@
+% \documentclass[sigconf]{acmart}
+% \documentclass[acmtog,anonymous,nonacm,review]{acmart}
+\documentclass[acmtog, nonacm]{acmart}
+\acmSubmissionID{1154}
+\citestyle{acmauthoryear}
+% \citestyle{plain}
+\settopmatter{printacmref=true}
+\usepackage{subcaption}
+
+% remove SIGGRAPH information
+% \settopmatter{printacmref=false} % Removes citation information below abstract
+% \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+% \pagestyle{plain} % removes running headers
+
+\makeatletter
+\let\@authorsaddresses\@empty
+\makeatother
+\setcopyright{none}
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{}% removes footnote with conference information in first column
+
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+% \usepackage{xr} % to cross reference with supplement
+% \externaldocument[supp-]{7Suppl_text}
+\usepackage{multicol}
+
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+
+% \acmJournal{TOG}
+
+%fix errors with overrightarrow
+\DeclareRobustCommand*{\ora}{\overrightarrow}
+
+
+\begin{document}
+	% \title{Inaccurate Distance Estimation in Head-Mounted Displays}
+    % \title{Perceived Distance Errors in Head-Mounted Displays}
+    %\title{Perceptual Impacts of Inaccurate Stereo Geometry in VR}
+    \title{Perceptual Sensitivity to Stereo Geometry Errors in Head-Mounted Displays}
+	\author{Raffles Xingqi Zhu}
+	\affiliation{
+			\institution{Reality Labs Research, Meta}
+   			\country{USA}
+                \institution{McGill University}
+                \country{Canada}
+		}
+			\email{raffles.zhu@mail.mcgill.ca}
+
+	\author{Charlie S. Burlingham}
+	\affiliation{
+			\institution{Reality Labs Research, Meta}
+   			\country{USA}
+		}
+	\email{cburlingham@meta.com}
+   
+	\author{Olivier Mercier}
+	\affiliation{
+			\institution{Reality Labs Research, Meta}
+   			\country{USA}
+		}
+	\email{omercier@meta.com}
+
+	\author{Phillip Guan}
+	\affiliation{
+			\institution{Reality Labs Research, Meta}
+   			\country{USA}
+		}
+	\email{philguan@meta.com}
+        % \renewcommand{\shortauthors}{Kwak, Penner, Wang, Saeedpour-Parizi, Mercier, Wu, Murdison, and Guan}
+	
+	\begin{abstract}
+        Virtual and augmented reality head-mounted displays (HMDs) render and display head-tracked, stereo images to create an egocentric, 3D percept to the viewer. Errors in stereo geometry introduced by rendering from an incorrect location (e.g., from tracking errors) or viewing from the wrong position (e.g., from fitment errors) can alter the depth and distance a user perceives compared to the intended geometry. In this work we evaluate how accurately a purely geometric framework that models distance misperception arising from inaccurate stereo geometry can predict changes to user reach behavior. We show that some stereo geometry errors can induce both under- and over-reaching, and the magnitude of error is consistent with geometric predictions. Surprisingly, we find the mismatches between HMD display separation and viewer interpupillary distance error have significantly less impact on reach behavior than predicted by geometry prediction. In a follow-up psychophysical study we find a relatively large detection threshold ($\approx$6 mm) to mismatches between viewer interpupillary distance and headset display separation, confirming the reaching result. We additionally show how perceptual thresholds to various stereo geometry errors change with viewing distance and scene complexity.
+	\end{abstract}
+	% uncomment for submission
+        \setcopyright{none}
+        \settopmatter{printacmref=false} % Removes citation information below abstract
+        \renewcommand\footnotetextcopyrightpermission[1]{}% removes footnote with conference information in first column
+ 
+% \begin{CCSXML}
+% 	<ccs2012>
+% 	<concept>
+% 	<concept_id>10010147.10010371.10010387.10010866</concept_id>
+% 	<concept_desc>Computing methodologies~Virtual reality</concept_desc>
+% 	<concept_significance>500</concept_significance>
+% 	</concept>
+% 	</ccs2012>
+% \end{CCSXML}
+% \ccsdesc[500]{Computing methodologies~Virtual reality}	
+% 	\keywords{virtual reality, distance underestimation, rendering errors, world-locked rendering}	
+	%% A "teaser" image appears between the author and affiliation
+	%% information and the body of the document, and typically spans the
+	%% page.
+
+	\begin{teaserfigure}
+		\centering
+		\includegraphics[width=\textwidth]{figures/teaser.png}
+        \caption{We investigate whether geometric predictions from purposefully introduced rendering and viewing stereo geometry errors in head-mounted displays (HMDs) accurately model changes in perceived distance when these errors are viewed in an HMD. Some of the errors we examined would traditionally require physically changing the position of an HMD on the user's head (e.g., to simulate changes in eye relief). Precise manipulations of headset fit are difficult in practice, so we built an HMD software platform that allowed us render images in our HMD consistent with making these physical manipulations to facilitate our user studies. The impact of these errors was measured in a series of experiments involving blind reaching and visual only distance discrimination. \textbf{(A)} Rendering errors are displacements of the rendering cameras from the HMD centers of projection (CoP), typically located at the center of the eyebox. In this example, the rendering cameras are too far forward which can occur when video passthrough images are directly streamed to the HMD displays without view reprojection. Here the ray angle from the camera to a target point P is captured by the camera, and this ray is projected onto the display from the HMD CoP leading to the incorrect render geometry (the correct ray should pass from the HMD CoP through the target point P to the display). \textbf{(B)} Independent from rendering errors, viewing errors are displacements of the CoP of the viewer's eyes (user CoP) from the HMD CoP. Here, the incorrectly rendered left and right stereo images from (A) are additionally viewed from an incorrect location. The HMD interaxial distance (IAD, the distance between HMD CoP) is too large relative to the viewer's interpupillary distance (IPD). The viewer's eye relief is also too large, causing their eyes to be behind the HMD CoP. A simple ray-intersection model predicts that the combined effects of rendering and viewing errors will result in a misperception of the black point P' from the intended gray point P. \textbf{(C)} We evaluated the efficacy of this triangulation model in a blind reaching experiment, which required us to first use an eye-tracked HMD to compensate for naturally occurring viewing errors so that we could properly evaluate simulated rendering and viewing errors. This plot shows the blind reach performance for one participant in the no rendering or viewing error condition (red) and when HMD IAD is higher than user IPD (blue). In the absence of error, we find that there is still an under-reaching bias. Removing this bias aligns blind reach distances with predictions of our triangulation model for two out of three error conditions tested. \textbf{(D)} We measured error detection thresholds using a two interval forced choice psychophysical task. This design was made possible by leveraging eye tracking in our HMD platform to compare no-error stereo geometry to perturbed geometry due to introduced rendering and viewing errors. One example participant's binary response data for IPD viewing error are shown in red, with the psychometric function shown in blue. \textbf{(E)} The scene used in our experiments (controller in the reaching experiments is highlighted for emphasis).}
+		\label{fig:teaser}
+	\end{teaserfigure}
+	\maketitle
+	% for internal sharing
+        %	\pagestyle{plain} % removes running headers
+	
+	\input{1Intro}
+	\input{2Related}
+    \input{3Model} 
+	\input{4ReachingExperiment}
+	\input{5VisualPerceptionExperiment}   
+	\input{6Discussion}
+	\bibliographystyle{ACM-Reference-Format}
+	\bibliography{bib}
+        \nopagebreak 
+        \input{7Figures}
+\end{document}
