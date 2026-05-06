@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  5 MAY 2026 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  6 MAY 2026 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1254,19 +1254,25 @@ Class acmart Warning: A possible image without description on input line 33.
 [3.3{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.e
 nc}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 9.0pt on input line 71.
+(Font)              scaled to size 9.0pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 6.6pt on input line 71.
+(Font)              scaled to size 6.6pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
-(Font)              scaled to size 5.5pt on input line 71.
-) (./4ReachingExperiment.tex [4.4{/usr/local/texlive/2026/texmf-dist/fonts/enc/
-dvips/libertine/lbtn_fygcup.enc} <./figures/model/rendering_vs_viewing_error.pd
-f>]
+(Font)              scaled to size 5.5pt on input line 73.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 94.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.6pt on input line 42.
+(Font)              scaled to size 6.6pt on input line 107.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 42.
-<figures/reaching/real_life_VR_reaching_comparison.png, id=706, 229.99927pt x 1
+(Font)              scaled to size 5.5pt on input line 107.
+ [4.4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/libertine/lbtn_fygcup.
+enc}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.e
+nc} <./figures/model/rendering_vs_viewing_error.pdf>])
+(./4ReachingExperiment.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5.5]
+<figures/reaching/real_life_VR_reaching_comparison.png, id=732, 229.99927pt x 1
 64.59492pt>
 File: figures/reaching/real_life_VR_reaching_comparison.png Graphic file (type 
 png)
@@ -1282,7 +1288,7 @@ Class acmart Warning: A possible image without description on input line 53.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 56.
 
-<figures/reaching/reaching_HMD_coordinates.pdf, id=708, 263.48036pt x 211.02237
+<figures/reaching/reaching_HMD_coordinates.pdf, id=734, 263.48036pt x 211.02237
 pt>
 File: figures/reaching/reaching_HMD_coordinates.pdf Graphic file (type pdf)
 <use figures/reaching/reaching_HMD_coordinates.pdf>
@@ -1292,8 +1298,7 @@ Package pdftex.def Info: figures/reaching/reaching_HMD_coordinates.pdf  used on
 
 Class acmart Warning: A possible image without description on input line 60.
 
-[5.5]
-<figures/reaching/egocentric_distance_summary.pdf, id=735, 284.6344pt x 125.451
+<figures/reaching/egocentric_distance_summary.pdf, id=739, 284.6344pt x 125.451
 69pt>
 File: figures/reaching/egocentric_distance_summary.pdf Graphic file (type pdf)
 <use figures/reaching/egocentric_distance_summary.pdf>
@@ -1301,18 +1306,14 @@ Package pdftex.def Info: figures/reaching/egocentric_distance_summary.pdf  used
  on input line 77.
 (pdftex.def)             Requested size: 243.14749pt x 107.16849pt.
 
-
 Class acmart Warning: A possible image without description on input line 80.
 
-) (./5VisualPerceptionExperiment.tex [6.6 <./figures/reaching/real_life_VR_reac
-hing_comparison.png> <./figures/reaching/reaching_HMD_coordinates.pdf> <./figur
-es/reaching/egocentric_distance_summary.pdf
+) (./5VisualPerceptionExperiment.tex
+Underfull \vbox (badness 3492) has occurred while \output is active []
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/reaching/egocentri
-c_distance_summary.pdf): PDF inclusion: multiple pdfs with page group included 
-in a single page
->]
-<figures/visual/detection_thresholds_with_background.pdf, id=2929, 284.74379pt 
+ [6.6 <./figures/reaching/real_life_VR_reaching_comparison.png> <./figures/reac
+hing/reaching_HMD_coordinates.pdf>]
+<figures/visual/detection_thresholds_with_background.pdf, id=2336, 284.74379pt 
 x 243.08415pt>
 File: figures/visual/detection_thresholds_with_background.pdf Graphic file (typ
 e pdf)
@@ -1324,7 +1325,14 @@ f  used on input line 19.
 
 Class acmart Warning: A possible image without description on input line 22.
 
-<figures/visual/detection_thresholds_no_background.pdf, id=2932, 284.74379pt x 
+[7.7 <./figures/reaching/egocentric_distance_summary.pdf> <./figures/visual/det
+ection_thresholds_with_background.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/visual/detection_t
+hresholds_with_background.pdf): PDF inclusion: multiple pdfs with page group in
+cluded in a single page
+>]
+<figures/visual/detection_thresholds_no_background.pdf, id=3887, 284.74379pt x 
 243.08415pt>
 File: figures/visual/detection_thresholds_no_background.pdf Graphic file (type 
 pdf)
@@ -1333,25 +1341,26 @@ Package pdftex.def Info: figures/visual/detection_thresholds_no_background.pdf
  used on input line 45.
 (pdftex.def)             Requested size: 243.14749pt x 207.57947pt.
 
+
 Class acmart Warning: A possible image without description on input line 49.
 
-[7.7 <./figures/visual/detection_thresholds_with_background.pdf>])
-(./6Discussion.tex [8.8 <./figures/visual/detection_thresholds_no_background.pd
-f>]) (./0Main.bbl
+) (./6Discussion.tex [8.8 <./figures/visual/detection_thresholds_no_background.
+pdf>]) (./0Main.bbl
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 7.0pt on input line 46.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/sb/n' will be
 (Font)              scaled to size 7.3pt on input line 49.
+ [9.9]
 LaTeX Info: Redefining \tempurl on input line 366.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9.9]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [10.10])
 (./7Figures.tex
-<figures/model/webapp.png, id=5039, 1202.99437pt x 824.32968pt>
+<figures/model/webapp.png, id=5060, 1202.99437pt x 824.32968pt>
 File: figures/model/webapp.png Graphic file (type png)
 <use figures/model/webapp.png>
 Package pdftex.def Info: figures/model/webapp.png  used on input line 3.
@@ -1363,7 +1372,7 @@ Class acmart Warning: A possible image without description on input line 6.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/reaching/error_choices.pdf, id=5040, 611.71835pt x 325.70282pt>
+<figures/reaching/error_choices.pdf, id=5061, 611.71835pt x 325.70282pt>
 File: figures/reaching/error_choices.pdf Graphic file (type pdf)
 <use figures/reaching/error_choices.pdf>
 Package pdftex.def Info: figures/reaching/error_choices.pdf  used on input line
@@ -1376,17 +1385,13 @@ Class acmart Warning: A possible image without description on input line 14.
 
 Class acmart Warning: Some images may lack descriptions.
 
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
-[10.10] [11.11 <./figures/model/webapp.png>]
+[11.11] [12.12 <./figures/model/webapp.png>]
 (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
-) [12.12 <./figures/reaching/error_choices.pdf>] (./0Main.aux)
+) [13.13 <./figures/reaching/error_choices.pdf>] (./0Main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -1395,29 +1400,33 @@ Package rerunfilecheck Info: File `0Main.out' has not changed.
 (rerunfilecheck)             Checksum: BB9AEA6C706E8CAB2B5848EEA6EC95C8;3730.
  ) 
 Here is how much of TeX's memory you used:
- 23061 strings out of 467525
- 381084 string characters out of 5418982
- 883804 words of memory out of 5000000
- 50610 multiletter control sequences out of 15000+600000
- 813309 words of font info for 552 fonts, out of 8000000 for 9000
+ 23102 strings out of 467525
+ 381987 string characters out of 5418982
+ 885870 words of memory out of 5000000
+ 50618 multiletter control sequences out of 15000+600000
+ 831073 words of font info for 569 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,17n,131p,3398b,759s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,131p,3398b,820s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.
 pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/LibertineMathM
-I7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/LibertineMa
-thRM.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libertine/LinBi
-olinumT.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libertine/Li
-nBiolinumTB.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libertin
-e/LinLibertineT.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libe
-rtine/LinLibertineTI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public
-/libertine/LinLibertineTZ.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/p
-ublic/newtx/NewTXMI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/
+I5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/LibertineMa
+thMI7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/Libertin
+eMathRM.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libertine/Li
+nBiolinumT.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/libertine
+/LinBiolinumTB.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/liber
+tine/LinLibertineT.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/l
+ibertine/LinLibertineTB.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pub
+lic/libertine/LinLibertineTI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type
+1/public/libertine/LinLibertineTZ.pfb></usr/local/texlive/2026/texmf-dist/fonts
+/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1
+/public/newtx/txexs.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/
 newtx/txmiaX.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/t
-xsys.pfb>
-Output written on 0Main.pdf (12 pages, 2723765 bytes).
+xsym.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/txsys.pfb
+>
+Output written on 0Main.pdf (13 pages, 2827958 bytes).
 PDF statistics:
- 5164 PDF objects out of 6186 (max. 8388607)
- 2906 compressed objects within 30 object streams
- 139 named destinations out of 1000 (max. 500000)
- 88302 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 5199 PDF objects out of 6186 (max. 8388607)
+ 2932 compressed objects within 30 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 96494 words of extra memory for PDF output out of 106986 (max. 10000000)
 
