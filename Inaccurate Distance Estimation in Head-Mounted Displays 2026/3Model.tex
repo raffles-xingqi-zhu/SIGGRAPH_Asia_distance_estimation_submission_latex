@@ -98,7 +98,7 @@ Lastly, we present the simulated view to the user's actual eye. The user's eye i
 	\mathbf{R'} = \mathbf{E} + n \mathbf{V},   n \in \mathbb{R}
 \end{equation}
 
-The projected point is again found by setting $R'_{y}=d$, where $d$ is the fixed distance of the quad from the actual eye and solving for $n_{0}$. Substituting $n_{0}$ into Equation \ref{eqn: rendering_line_from_actual_eye} gives the intersection point $\mathbf{R'_{0}}$. The standard OVR camera positioned at the Quest 3 CoP then views the projected point $\mathbf{R'_{0}}$ and the ray is: 
+The projected point is again found by setting $R'_{y}=d$, where $d$ is the fixed distance of the quad from the actual eye and solving for $n_{0}$. Substituting $n_{0}$ into Equation \ref{eqn: rendering_line_from_actual_eye} gives the intersection point $\mathbf{R'_{0}}$. The standard OVR camera positioned at the Quest 3 CoP then views the projected point $\mathbf{R'_{0}}$ and sends its frame buffer to the actual headset display. The ray is given by: 
 
 \begin{equation}
 	\mathbf{V'} = \mathbf{R'_{0}} - (\frac{IPD}{2}, 0, 0)
